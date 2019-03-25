@@ -3,7 +3,7 @@ pageTitle: Quickstart
 keywords: getting started, grakn, graql, tutorial, quickstart, overview
 longTailKeywords: get started with grakn, grakn tutorial, grakn quickstart, learn grakn
 summary: Learn about the constructs of the Grakn Schema, visualise a knowledge graph, perform read and write queries and explore the power of automated reasoning and analytics with Grakn.
-permalink: /docs/general/quickstart
+permalink: :path
 ---
 
 ### An Overview
@@ -12,7 +12,7 @@ In this tutorial, we go through creating and interacting with a Grakn knowledge 
 Let's get started!
 
 ### Run Grakn
-[Install Grakn](/docs/running-grakn/install-and-run#system-requirements) and start the [Grakn Server](/docs/running-grakn/install-and-run#start-the-grakn-server).
+[Install Grakn](../02-running-grakn/01-install-and-run#system-requirements) and start the [Grakn Server](/docs/running-grakn/install-and-run#start-the-grakn-server).
 
 
 ### The Schema

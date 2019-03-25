@@ -3,6 +3,7 @@ pageTitle: Type
 keywords: grakn, type, api, methods
 longTailKeywords: grakn type, type methods, grakn type methods, grakn entity type methods, grakn attribute type methods, grakn relation type methods, grakn role methods
 Summary: Methods available on Type objects.
+permalink: :path
 toc: true
 ---
 
