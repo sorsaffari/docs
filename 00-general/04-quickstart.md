@@ -12,11 +12,11 @@ In this tutorial, we go through creating and interacting with a Grakn knowledge 
 Let's get started!
 
 ### Run Grakn
-[Install Grakn](../02-running-grakn/01-install-and-run#system-requirements) and start the [Grakn Server](/docs/running-grakn/install-and-run#start-the-grakn-server).
+[Install Grakn](../02-running-grakn/01-install-and-run.md#system-requirements) and start the [Grakn Server](/docs/running-grakn/install-and-run.md#start-the-grakn-server).
 
 
 ### The Schema
-A [Grakn schema](/docs/schema/overview) is the blueprint of a Grakn knowledge graph. The code presented below is only a part of the schema for the social network knowledge graph that represents the concepts of `friendship`.
+A [Grakn schema](/docs/schema/overview.md) is the blueprint of a Grakn knowledge graph. The code presented below is only a part of the schema for the social network knowledge graph that represents the concepts of `friendship`.
 
 ```graql
 define
