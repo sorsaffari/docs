@@ -115,6 +115,15 @@ load("@test_example_pip//:requirements.bzl",
 test_example_pip_install = "pip_install")
 test_example_pip_install()
 
+pip_import(
+    name = "test_links_pip",
+    requirements = "//test/links:requirements.txt",
+)
+
+load("@test_links_pip//:requirements.bzl",
+test_links_pip_install = "pip_install")
+test_links_pip_install()
+
 
 ##########################
 # Load GRPC Dependencies #
@@ -135,9 +144,16 @@ java_grpc_compile()
 # Load Grakn Core Dependencies #
 ################################
 
+load("@graknlabs_grakn_core//dependencies/graknlabs:dependencies.bzl", "graknlabs_benchmark")
+graknlabs_benchmark()
+
 load("@graknlabs_grakn_core//dependencies/maven:dependencies.bzl",
 graknlabs_grakn_core_maven_dependencies = "maven_dependencies")
 graknlabs_grakn_core_maven_dependencies()
+
+load("@graknlabs_benchmark//dependencies/maven:dependencies.bzl",
+graknlabs_benchmark_maven_dependencies = "maven_dependencies")
+graknlabs_benchmark_maven_dependencies()
 
 load("@graknlabs_build_tools//bazel:dependencies.bzl", "bazel_rules_docker")
 bazel_rules_docker()
